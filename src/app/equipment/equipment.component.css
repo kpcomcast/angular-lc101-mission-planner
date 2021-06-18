@@ -8,11 +8,22 @@ button {
     cursor: pointer;
 }
 
+button:disabled {
+  background-color: rgba(255, 0, 0, 0.163);
+  color: black;
+}
+
 h3 {
     text-align: center;
 }
 
 /* Add an 'active' class to style the background of the 'Add to Cargo Hold' buttons. */
-
+.active {
+  background-color: rgba(128, 255, 0, 0.286);
+}
 
 /* Add the 'nearMaxMass' class style here: */
+.nearMaxMass {
+  font-style: italic;
+  color: red;
+}
