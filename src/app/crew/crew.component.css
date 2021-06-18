@@ -12,6 +12,11 @@ li:hover {
 #astCrew {
   padding: 2px 0px;
 }
+
+#pet {
+  text-align: center;
+}
+
 .displayBox {
     height: 275px;
     width: auto;
