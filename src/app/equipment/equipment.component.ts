@@ -29,6 +29,20 @@ export class EquipmentComponent implements OnInit {
 
   // Code your addItem function here:
 
+  howMany(item): boolean {
+    let count:number = 0;
+    this.cargoHold.forEach(function(a): void {
+      if (a['name'] === item.name) {
+        count++;
+      }
+    });
+    if (count < 2) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
   addItem(equipment): boolean {
     this.cargoHold.push(equipment);
     this.cargoMass += equipment.mass;
